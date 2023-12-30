@@ -19,6 +19,7 @@ const questiondatadeletedControlers = require('../controllers/questiondatadelete
 const questiondatamcqdeletedControlers = require('../controllers/questiondatamcqdeletedControlers');
 const answerdatadeletedControlers = require('../controllers/answerdatadeletedControlers');
 const Totalparticipantdatadeletecontrollers = require('../controllers/Totalparticipantdatadeletecontrollers');
+const RegistrationControllers2 = require('../controllers/RegistrationControllers2');
 const UserdataMiddleware = require('../middleware/UserdataMiddleware');
  
 
@@ -34,6 +35,7 @@ router.get('/api/contest/question-numerical/',  NumericalQuestionApiControllers)
 router.get('/api/logout', LogOutControllers)
 router.get('/api/total-tems/members/', totalteam_member)
 router.post('/participants/registration', RegistrationControllers);
+router.post('/registration', RegistrationControllers2);
 router.post('/login', LoginControllers);
 router.post('/coding-contest/api/answer/participant', QuestionAnswerControllers)
 router.post('/coding-contest/api/question-mcq/', QuestionmcqControllers)
